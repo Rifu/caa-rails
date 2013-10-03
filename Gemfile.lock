@@ -16,6 +16,13 @@ GIT
       ransack (~> 1.0)
       sass-rails
 
+GIT
+  remote: git://github.com/thomas-mcdonald/bootstrap-sass.git
+  revision: c0e12a90ba3e44ab68d3f153411fba3edc400b2a
+  specs:
+    bootstrap-sass (3.0.0.0)
+      sass (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -52,6 +59,10 @@ GEM
       sass (>= 3.2.0)
       thor
     builder (3.1.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.2)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -103,6 +114,11 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.0)
     orm_adapter (0.4.0)
+    paperclip (3.5.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
     pg (0.17.0)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
@@ -170,10 +186,12 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  bootstrap-sass!
   coffee-rails (~> 4.0.0)
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
+  paperclip (~> 3.0)
   pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
