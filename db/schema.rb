@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131003142532) do
+ActiveRecord::Schema.define(version: 20131004111140) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -61,11 +61,31 @@ ActiveRecord::Schema.define(version: 20131003142532) do
     t.datetime "event_image_updated_at"
   end
 
+  create_table "pages", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pages", ["slug"], name: "index_pages_on_slug", unique: true, using: :btree
+
   create_table "posts", force: true do |t|
     t.text     "content"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "sites", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "banner_file_name"
+    t.string   "banner_content_type"
+    t.integer  "banner_file_size"
+    t.datetime "banner_updated_at"
   end
 
 end

@@ -1,2 +1,22 @@
+.row
+	.sitebanner.col-md-12.hidden-xs.hidden-sm
+		= image_tag(@site.banner, :class => 'img-responsive')
+.events
+	.row
+		.col-md-4
+			= render partial: "eventbox", locals: {event: @weekly}
+		.col-md-4
+			= render partial: "eventbox", locals: {event: @event}
+		.col-md-4
+			= render partial: "eventbox", locals: {event: @event}
+.row
+	.col-md-9
+		.posts
+			.post[@post]
+				%h1= @post.title
+				%p= @post.content.html_safe
+	.col-md-3
+		.sidebar.visible-lg.well
+			Super sidebar
 %h1 Pages#index
 %p Find me in app/views/pages/index.html.haml

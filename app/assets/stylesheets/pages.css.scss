@@ -1,4 +1,49 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap"
+$font-size-base: 12px;
+$grid-gutter-width: 10px;
+@import "bootstrap";
+
+.event-info{
+	max-width: 400px;
+	position: relative;
+	border-bottom: 1px solid #eeeeee;
+
+	.event-image{
+	}
+	.event-type h5{
+		margin-top: 0;
+		margin-bottom: 0;
+		color: white;
+		font-size: 24px;
+	}
+	.event-overlay{
+		color: white;
+		text-shadow: 1px 1px 1px #333333;
+		position: absolute;
+		top:0;
+		padding: 5px;
+		background-image: url(image-path('gradient.png'));
+		background-repeat: repeat-x;
+		width: 100%;
+		height: 100%;
+	}
+	.event-title{
+		position: absolute;
+		color: white;
+		text-shadow: 1px 1px 1px #333333;
+		bottom: 0;
+		h2{
+			margin-top: 5px;
+			margin-bottom: 5px
+		}
+	}
+}
+
+.sitebanner{
+	margin-bottom: 10px;
+}
+.events{
+	margin-bottom: 10px;
+}

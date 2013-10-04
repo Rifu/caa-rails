@@ -38,9 +38,11 @@ end
 
 # ActiveAdmin requirements
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'active_admin_editor'
 
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
 gem 'paperclip', '~> 3.0'
+gem 'friendly_id', '5.0.0.rc2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

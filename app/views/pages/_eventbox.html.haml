@@ -1,0 +1,12 @@
+.event-info[event]
+	.event-holder
+		.event-image=image_tag(event.event_image, :class => "img-responsive")
+		.event-overlay
+			.event-type
+				%h5 Weekly Showing
+			.event-details
+				= "#{event.event_date.to_time.strftime("%a %m/%d")} #{event.start_time.strftime("%I:%M")}-#{event.end_time.strftime("%I:%M %p")}"
+			.event-details
+				= "#{event.location}"
+			.event-title
+				%h2= "#{event.title}"
