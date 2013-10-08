@@ -5,6 +5,6 @@ class PagesController < ApplicationController
   	@weekly = Event.where("event_type = ? AND event_date >= ?", 'Showing', today).first
   	@social = Event.where("event_type = ? AND event_date >= ?", 'Manga Social', today).first
   	@gamenight = Event.where("event_type = ? AND event_date >= ?", 'Game Night', today).first
-  	@post = Post.find(1)
+  	@posts = Post.find(:all, :order => "id desc", :limit => 5)
   end
 end

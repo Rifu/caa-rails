@@ -19,10 +19,31 @@
 	    </button>
 	    <a class="navbar-brand" href="<%= root_url %>">Cal Animage Alpha</a>
 	  </div>
+
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+	    <ul class="nav navbar-nav">
+	      <li><a href="#">Showing Schedule</a></li>
+	      <li><a href="#">Library</a></li>
+	      <li><a href="#">About Us</a></li>
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community<b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="https://www.facebook.com/groups/calanimagealpha">Facebook Group</a></li>
+	          <li><a href="https://calmail.berkeley.edu/manage/list/listinfo/ucbanimage@lists.berkeley.edu">Mailing List</a></li>
+	          <li><a href="https://twitter.com/calanimagealpha">Twitter</a></li>
+	          <li><a href="http://forum.calanimagealpha.com/">Forums</a></li>
+	          <li><a href="http://calanimagealpha.com/chat">IRC Chatroom</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+	</div>
 </nav>
 <div class="container page-content">
 	<%= yield %>
 </div>
 
+<div class="container footer">
+	<span>Comments or questions? Contact the webmaster at webmaster@calanimagealpha.com</span>
+</div>
 </body>
 </html>

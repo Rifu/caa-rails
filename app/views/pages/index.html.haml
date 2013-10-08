@@ -12,11 +12,7 @@
 .row
 	.col-md-9
 		.posts
-			.post[@post]
-				%h1= @post.title
-				%p= @post.content.html_safe
+			= render partial: "post", collection: @posts
 	.col-md-3
-		.sidebar.visible-lg.well
-			Super sidebar
-%h1 Pages#index
-%p Find me in app/views/pages/index.html.haml
+		.sidebar.visible-lg
+			This sidebar does nothing.
