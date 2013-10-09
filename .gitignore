@@ -25,8 +25,8 @@ Capfile
 capybara-*.html
 .rspec
 .rvmrc
-/.bundle
-/vendor/bundle
+#/.bundle
+#/vendor/bundle
 /log/*
 /tmp/*
 /db/*.sqlite3
